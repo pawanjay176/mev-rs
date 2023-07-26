@@ -391,8 +391,9 @@ dependencies = [
 [[package]]
 name = "beacon-api-client"
 version = "0.1.0"
-source = "git+https://github.com/ralexstokes/beacon-api-client?rev=93d7e8c#93d7e8c38fe9782c4862909663e7b57c44f805a9"
+source = "git+https://github.com/pawanjay176/beacon-api-client?branch=main#fdf1dea680e2e3a5480895ea507c76e07325c9c4"
 dependencies = [
+ "clap",
  "ethereum-consensus",
  "http",
  "itertools",
@@ -481,13 +482,11 @@ dependencies = [
 [[package]]
 name = "blst"
 version = "0.3.10"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6a30d0edd9dd1c60ddb42b80341c7852f6f985279a5c1a83659dcb65899dec99"
+source = "git+https://github.com/supranational/blst#327d30a51c858e9c34f5b6eb3a6966b2cf6bc9cc"
 dependencies = [
  "cc",
  "glob",
  "threadpool",
- "which",
  "zeroize",
 ]
 
@@ -859,7 +858,7 @@ dependencies = [
 [[package]]
 name = "ethereum-consensus"
 version = "0.1.1"
-source = "git+https://github.com/ralexstokes/ethereum-consensus?rev=e380108#e380108d15fcc40349927fdf3d11c71f9edb67c2"
+source = "git+https://github.com/pawanjay176/ethereum-consensus?branch=main#69735b181a2821f7945baca658d876e88a800240"
 dependencies = [
  "async-stream",
  "blst",
@@ -3063,17 +3062,6 @@ checksum = "9b85cbef8c220a6abc02aefd892dfc0fc23afb1c6a426316ec33253a3877249b"
 dependencies = [
  "js-sys",
  "wasm-bindgen",
-]
-
-[[package]]
-name = "which"
-version = "4.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2441c784c52b289a054b7201fc93253e288f094e2f4be9058343127c4226a269"
-dependencies = [
- "either",
- "libc",
- "once_cell",
 ]
 
 [[package]]
